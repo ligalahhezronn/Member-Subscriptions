@@ -1,176 +1,191 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Subscription Slider</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+          integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
 </head>
 
 <body class="bg-[#f5f3fd] flex justify-center items-center min-h-screen overflow-x-hidden">
-   
-    <div class="absolute bg-[#211d4f] w-[40rem] h-[27rem] rounded-lg "></div>
+    <!-- Background -->
+    <div class="absolute bg-[#211d4f] w-[40rem] h-[27rem] rounded-lg"></div>
 
-<section class="w-[45rem]  bg-white relative rounded-lg slider h-[43rem] sm:h-[24rem] overflow-x-hidden text-[#23204f] section">
+    <!-- Main Slider Section -->
+    <section class="relative w-[45rem] bg-white rounded-lg h-[43rem] sm:h-[24rem] overflow-hidden text-[#23204f] shadow-lg">
+        <!-- Slide 1: Subscription Options -->
+        <div class="slide absolute w-full py-8 px-6 sm:px-12 left-0 h-full transition-all duration-500">
+            <h1 class="text-center font-semibold text-xl mb-2">Subscriptions</h1>
+            <p class="text-sm text-center mt-2 sm:w-[70%] mx-auto">Support these creators by purchasing their monthly subscriptions, and get access to premium content.</p>
 
-
-    <!-- 1 -->
-    <div class="slide absolute w-full top-0 py-8 px-6 sm:px-12  left-0 h-full  transition-all duration-500">
-
-        <h1 class="text-center font-medium text-xl mb-2">Subscriptions</h1>
-
-        <p class="text-sm text-center mt-2 sm:w-[70%] mx-auto">Support these creators by purchasing their monthly subscriptions, and get  access to premuim content.</p>
-
-        <div class="flex items-center justify-center gap-4 flex-wrap mt-6">
-            <button class="bg-slate-100 rounded-xl py-1 px-3 text-sm font-medium hover:-translate-y-1 transition-all duration-500">
-                <i class="fa-solid fa-fingerprint"></i>
-                <a href="#">Source files</a>
-            </button>
-
-            <!-- 2 -->
-            <button class="bg-slate-100 rounded-xl py-1 px-3 text-sm font-medium hover:-translate-y-1 transition-all duration-500">
-                        <i class="fa-brands fa-steam-symbol"></i>
-                            <a href="#">Live Streams</a>
-                        </button>
-
-                        <!-- 3 -->
-                        <button class="bg-slate-100 rounded-xl py-1 px-3 text-sm font-medium hover:-translate-y-1 transition-all duration-500">
-                                        <i class="fa-solid fa-briefcase"></i>
-                                        <a href="#">Meetup</a>
-                                    </button>
-        </div>
-
-        <div class="flex items-center gap-12 justify-center flex-col sm:flex-row mt-9">
-            <div class="flex flex-col gap-1 text-center text-sm">
-                <img src="https://unsplash.com/photos/WMD64tMfc4k/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkwNTI0NjU0fA&force=true&w=1920" alt="user" class="w-16 h-16 rounded-full object-cover object-top mx-auto">
-                <h2 class="font-bold">Ludwig Lagos</h2>
-                <span class="text-xs">Ilustrator</span>
-                <button class="py-1.5 px-3 rounded-2xl bg-[#211d4f] text-sm font-medium text-slate-100">View content</button>
+            <div class="flex items-center justify-center gap-4 flex-wrap mt-6">
+                <button class="subscription-btn">
+                    <i class="fa-solid fa-fingerprint"></i> <a href="#">Source files</a>
+                </button>
+                <button class="subscription-btn">
+                    <i class="fa-brands fa-steam-symbol"></i> <a href="#">Live Streams</a>
+                </button>
+                <button class="subscription-btn">
+                    <i class="fa-solid fa-briefcase"></i> <a href="#">Meetup</a>
+                </button>
             </div>
 
-
-<!-- 2 -->
-<div class="flex flex-col gap-1 text-center text-sm">
-    <img src="https://unsplash.com/photos/JyO_szjGvUw/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkwNTI0NDYyfA&force=true&w=1920" alt="user" class="w-16 h-16 rounded-full object-cover object-top mx-auto">
-    <h2 class="font-bold">Ahamd Valentine</h2>
-    <span class="text-xs">3D artist</span>
-    <button class="py-1.5 px-3 rounded-2xl bg-[#211d4f] text-sm font-medium text-slate-100">View content</button>
-</div>
-
-<!-- 3 -->
-<div class="flex flex-col gap-1 text-center text-sm">
-    <img src="https://unsplash.com/photos/LPvloZJu1Pk/download?force=true&w=1920" alt="user" class="w-16 h-16 rounded-full object-cover object-top mx-auto">
-    <h2 class="font-bold">Ludwig Lagos</h2>
-    <span class="text-xs">Ilustrator</span>
-    <button class="py-1.5 px-3 rounded-2xl bg-[#211d4f] text-sm font-medium text-slate-100">View content</button>
-</div>
-            
-        </div>
-     
-    </div>
-
-    <!-- 2 -->
-
-    <div class="slide absolute w-full top-0 left-0 h-full py-8 px-6 sm:px-12   transition-all duration-500 ">
-       
-        <h1 class="text-center font-medium text-xl mb-2">Subscriptions</h1>
-        
-        <p class="text-sm text-center mt-2 sm:w-[70%] mx-auto">Support these creators by purchasing their monthly subscriptions,
-            and get access to premuim content.</p>
-        
-        <div class="flex items-center justify-center gap-4 flex-wrap mt-6">
-            <button class="bg-slate-100 rounded-xl py-1 px-3 text-sm font-medium hover:-translate-y-1 transition-all duration-500">
-                        <i class="fa-solid fa-fingerprint"></i>
-                        <a href="#">Source files</a>
-                    </button>
-        
-            <!-- 2 -->
-            <button class="bg-slate-100 rounded-xl py-1 px-3 text-sm font-medium hover:-translate-y-1 transition-all duration-500">
-                                <i class="fa-brands fa-steam-symbol"></i>
-                                    <a href="#">Live Streams</a>
-                                </button>
-        
-            <!-- 3 -->
-            <button class="bg-slate-100 rounded-xl py-1 px-3 text-sm font-medium hover:-translate-y-1 transition-all duration-500">
-                                                <i class="fa-solid fa-briefcase"></i>
-                                                <a href="#">Meetup</a>
-                                            </button>
-        </div>
-        
-        <div class="flex items-center gap-12 justify-center flex-col sm:flex-row mt-9">
-            <div class="flex flex-col gap-1 text-center text-sm">
-                <img src="https://unsplash.com/photos/rnH5ITofDAM/download?ixid=M3wxMjA3fDB8MXxhbGx8fHx8fHx8fHwxNjkwNTI0NTk4fA&force=true&w=1920" alt="user" class="w-16 h-16 rounded-full object-cover object-top mx-auto">
-                <h2 class="font-bold">Ludwig Lagos</h2>
-                <span class="text-xs">Ilustrator</span>
-                <button class="py-1.5 px-3 rounded-2xl bg-[#211d4f] text-sm font-medium text-slate-100">View content</button>
+            <div class="flex items-center gap-12 justify-center flex-col sm:flex-row mt-9">
+                <div class="user-card">
+                    <img src="https://unsplash.com/photos/WMD64tMfc4k/download?force=true&w=1920" alt="user" class="user-image">
+                    <h2 class="font-bold">Ludwig Lagos</h2>
+                    <span class="text-xs">Illustrator</span>
+                    <button class="view-btn">View content</button>
+                </div>
+                <div class="user-card">
+                    <img src="https://unsplash.com/photos/JyO_szjGvUw/download?force=true&w=1920" alt="user" class="user-image">
+                    <h2 class="font-bold">Ahmad Valentine</h2>
+                    <span class="text-xs">3D Artist</span>
+                    <button class="view-btn">View content</button>
+                </div>
             </div>
-        
-        
-            <!-- 2 -->
-            <div class="flex flex-col gap-1 text-center text-sm">
-                <img src="https://unsplash.com/photos/4Yv84VgQkRM/download?force=true&w=1920" alt="user" class="w-16 h-16 rounded-full object-cover object-top mx-auto">
-                <h2 class="font-bold">Ludwig Lagos</h2>
-                <span class="text-xs">Ilustrator</span>
-                <button class="py-1.5 px-3 rounded-2xl bg-[#211d4f] text-sm font-medium text-slate-100">View content</button>
-            </div>
-        
-            <!-- 3 -->
-            <div class="flex flex-col gap-1 text-center text-sm">
-                <img src="https://unsplash.com/photos/sJXF_n7HDxs/download?force=true&w=1920" alt="user" class="w-16 h-16 rounded-full object-cover object-top mx-auto">
-                <h2 class="font-bold">Ludwig Lagos</h2>
-                <span class="text-xs">Ilustrator</span>
-                <button class="py-1.5 px-3 rounded-2xl bg-[#211d4f] text-sm font-medium text-slate-100">View content</button>
-            </div>
-        
         </div>
-      
-    </div>
 
-    <!-- 3 -->
-    <div class="slide absolute w-full top-0 py-8 px-6 sm:px-12  left-0 h-full  transition-all duration-500">
+        <!-- Slide 2: New Subscription Prompt -->
+        <div class="slide absolute w-full py-8 px-6 sm:px-12 left-0 h-full transition-all duration-500">
+            <h1 class="text-xl font-bold text-center">New Here? Subscribe Now!👇</h1>
+            <div class="text-center mt-12 animate-bounce">
+                <button class="join-btn">Join Now</button>
+            </div>
+            <div class="new-users flex items-center gap-12 justify-center flex-col sm:flex-row mt-10"></div>
+        </div>
 
- <h1 class="text-xl  font-bold text-center">New Here? Subscribe Now!👇</h1>
+        <!-- Navigation Buttons -->
+        <button class="slider-btn left-6"><i class="fa-solid fa-chevron-left"></i></button>
+        <button class="slider-btn right-6"><i class="fa-solid fa-chevron-right"></i></button>
+    </section>
 
-
-       <div class="text-center mt-12 animate-bounce">
-            <button class="py-3 px-4 rounded-lg font-medium uppercase text-slate-100 bg-[#211d4f] w-fit mx-auto shadow-xl hover:shadow-[#211d4f]/30 transition-all join">Join Now</button>
-       </div>
-
-    <div class="flex items-center gap-12 justify-center flex-col sm:flex-row mt-10 newUsers">
-       
-    
-    </div>
-
-    </div>
-    <!-- 3 -->
-
-  
-
-    <button class="slider__btn--left  absolute bottom-24 text-xl  left-6  "><i class="fa-solid fa-chevron-left"></i></button>
-    <button class="slider__btn--right   absolute bottom-24 text-xl right-6"><i class="fa-solid fa-chevron-right"></i></button>
-
-    <div class="dots bg-white absolute bottom-1 left-1/2 -translate-x-1/2"></div>
-</section>
-
-
-<!-- form popup -->
-
-    <form action="#" class="py-12 px-6 rounded-lg absolute bg-slate-200 w-[16rem] sm:w-[24rem] flex flex-col gap-4 form transition-all duration-500 scale-0 -z-10">
-
-        <input type="url" placeholder="Profile Link" id="userprofile" class="w-full py-2 px-3 rounded-md focus:border-[#211d4f]" required>
-
-        <input type="text" placeholder="User Name" id="username" class="w-full py-2 px-3 rounded-md focus:border-[#211d4f]" required>
-
-    <input type="text" placeholder="Job" id="userjob" class="w-full  py-2 px-3 rounded-md focus:border-[#211d4f]" required>
-
-    <input type="submit" class="w-full bg-[#211d4f] text-slate-100 py-2 rounded-md cursor-pointer">
-        
-
+    <!-- Form Popup for New User -->
+    <form action="#" class="form-popup py-12 px-6 rounded-lg bg-slate-200 w-[16rem] sm:w-[24rem] flex flex-col gap-4 transition-all duration-500 scale-0 -z-10">
+        <input type="url" placeholder="Profile Link" id="userprofile" class="form-input" required>
+        <input type="text" placeholder="User Name" id="username" class="form-input" required>
+        <input type="text" placeholder="Job" id="userjob" class="form-input" required>
+        <input type="submit" class="submit-btn" value="Submit">
     </form>
 
-</body>
+    <style>
+        .subscription-btn {
+            background-color: #f1f5f9;
+            border-radius: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+            transition: transform 0.5s;
+        }
+        .subscription-btn:hover {
+            transform: translateY(-0.25rem);
+        }
+        .user-card {
+            text-align: center;
+            font-size: 0.875rem;
+        }
+        .user-image {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 9999px;
+            object-cover: cover;
+        }
+        .view-btn {
+            background-color: #211d4f;
+            color: white;
+            border-radius: 9999px;
+            padding: 0.375rem 1rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        .slider-btn {
+            position: absolute;
+            bottom: 6rem;
+            font-size: 1.25rem;
+            color: #23204f;
+        }
+        .join-btn {
+            background-color: #211d4f;
+            color: #ffffff;
+            padding: 0.75rem 1rem;
+            border-radius: 0.75rem;
+            font-weight: 600;
+            transition: box-shadow 0.3s;
+        }
+        .form-popup {
+            background-color: #e2e8f0;
+        }
+        .form-input {
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+            outline: none;
+            border: 1px solid #cbd5e1;
+        }
+        .submit-btn {
+            background-color: #211d4f;
+            color: white;
+            padding: 0.5rem;
+            border-radius: 0.375rem;
+        }
+    </style>
 
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const btnLeft = document.querySelector('.slider-btn.left-6');
+            const btnRight = document.querySelector('.slider-btn.right-6');
+            const joinBtn = document.querySelector('.join-btn');
+            const formPopup = document.querySelector('.form-popup');
+            const section = document.querySelector('section');
+            const newUsers = document.querySelector('.new-users');
+            const form = document.querySelector('.form-popup');
+            let curSlide = 0;
+
+            const goToSlide = (slide) => {
+                slides.forEach((s, i) => s.style.transform = `translateX(${100 * (i - slide)}%)`);
+            };
+
+            const nextSlide = () => {
+                curSlide = (curSlide === slides.length - 1) ? 0 : curSlide + 1;
+                goToSlide(curSlide);
+            };
+
+            const prevSlide = () => {
+                curSlide = (curSlide === 0) ? slides.length - 1 : curSlide - 1;
+                goToSlide(curSlide);
+            };
+
+            goToSlide(0);
+            btnRight.addEventListener('click', nextSlide);
+            btnLeft.addEventListener('click', prevSlide);
+
+            joinBtn.addEventListener('click', () => {
+                section.classList.add("blur-sm");
+                formPopup.classList.remove("-z-10", "scale-0");
+            });
+
+            form.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const userProfile = document.querySelector('#userprofile').value;
+                const username = document.querySelector('#username').value;
+                const userJob = document.querySelector('#userjob').value;
+                
+                const newUserHTML = `
+                    <div class="user-card">
+                        <img src="${userProfile}" alt="user" class="user-image">
+                        <h2 class="font-bold">${username}</h2>
+                        <span class="text-xs">${userJob}</span>
+                        <button class="view-btn">View content</button>
+                    </div>`;
+                
+                newUsers.insertAdjacentHTML('beforeend', newUserHTML);
+                section.classList.remove("blur-sm");
+                formPopup.classList.add("-z-10", "scale-0");
+            });
+        });
+    </script>
+</body>
 </html>
